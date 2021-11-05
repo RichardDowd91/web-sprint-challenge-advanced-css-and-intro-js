@@ -245,15 +245,17 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array, string){
+function get20s(array){
   // for(let i = 0; i < array.length; i++){
   //   if( string >= '1900')
   // }
   // artists.split( artists[5], [17] ); {
   //   return(artists.name)
   // }
+
+
 }
-// coming back to task 4 later
+
   
 
 
@@ -268,16 +270,8 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, index) {
-  // for(let i = 0; i < array.length; i++){
-  //   if(index === array[i]){
-  //     array.splice(i,1);
-  //   }
-  // // }
-  // return array.splice([number],1).length;
-  // array.splice([index],1);
-  // return array.length;
-   array.splice(index, 1);
-   return array.length
+  array.splice(index, 1);
+  return array.length;
 }
   //  console.log(removeArtist('task 5',artists, 0));
 
@@ -318,10 +312,12 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-
-return array
+for(let i = 0; i < array.length; i++){
+  if(array.paintings >= 100);
+} //split method again?
+return array.name
 }
-
+console.log('task 7', lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
