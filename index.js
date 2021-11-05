@@ -1,3 +1,5 @@
+const { matchesPattern } = require("@babel/types");
+
 const artists = [
   {
     "id": 0,
@@ -246,22 +248,17 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array){
+  // let filteredArray = [];
   // for(let i = 0; i < array.length; i++){
-  //   if( string >= '1900')
+  //   if(array[i].includes(string)){
+  //     filteredArray.split(array[i]);
+  //    }
   // }
-  // artists.split( artists[5], [17] ); {
-  //   return(artists.name)
-  // }
-  // artists.split([5],[17]);
-  // return array.name
-artists.split([5].name);
-artists.split([17].name);
-
-return array.name
-
-
+  // return array.name;
+  
 }
 
+console.log(get20s(artists))
   
 
 
