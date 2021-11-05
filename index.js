@@ -245,12 +245,15 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array){
-  artists.split('1900 - 2000'); {
-    return(artists.name)
-  }
+function get20s(array, string){
+  // for(let i = 0; i < array.length; i++){
+  //   if( string >= '1900')
+  // }
+  // artists.split( artists[5], [17] ); {
+  //   return(artists.name)
+  // }
 }
-
+// coming back to task 4 later
   
 
 
@@ -266,13 +269,15 @@ For example, if removeArtist is invoked with the artists array and the number 0,
 
 function removeArtist(array, index) {
   // for(let i = 0; i < array.length; i++){
-  //   if(){
-
+  //   if(index === array[i]){
+  //     array.splice(i,1);
   //   }
-  // }
-  // return length
+  // // }
+  // return array.splice([number],1).length;
+  // array.splice([index],1);
+  // return array.length;
 }
-
+//  console.log(removeArtist('task 5',artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -291,9 +296,16 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-  /*Your Code Here*/
+array.push(
+'id: 20',
+'name : Richard Dowd',
+'years : 1991-2021',
+'genre: Web Design',
+'nationality : American',
+'bio : Richard is brand new to coding and is learing many new things. He is developing a growth mindset and will continue to learn.');
+return array;
 }
-
+console.log('task 6',addArtist(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
