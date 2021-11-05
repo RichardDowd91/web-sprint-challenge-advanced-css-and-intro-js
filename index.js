@@ -276,8 +276,10 @@ function removeArtist(array, index) {
   // return array.splice([number],1).length;
   // array.splice([index],1);
   // return array.length;
+   array.splice(index, 1);
+   return array.length
 }
-//  console.log(removeArtist('task 5',artists, 0));
+  //  console.log(removeArtist('task 5',artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -316,7 +318,8 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-  /*Your Code Here*/
+
+return array
 }
 
 
