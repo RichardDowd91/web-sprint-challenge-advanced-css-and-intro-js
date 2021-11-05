@@ -248,17 +248,21 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array){
-  // let filteredArray = [];
-  // for(let i = 0; i < array.length; i++){
-  //   if(array[i].includes(string)){
-  //     filteredArray.split(array[i]);
-  //    }
-  // }
-  // return array.name;
+
+  let filteredArray = array.filter((x) => {
+    let years = x.years;
+    let birthYear = years.split(' - ')[0];
+    let deathYear = years.split(' - ')[1];
+    birthYear = parseInt(birthYear);
+    deathYear = parseInt(deathYear);
+    return birthYear >= 1900 && birthYear < 2000 && deathYear > 1900 && deathYear < 2000;
+  });
+    
+  return filteredArray.map((y) => y.name);
   
 }
 
-console.log(get20s(artists))
+console.log('task 4', get20s(artists))
   
 
 
