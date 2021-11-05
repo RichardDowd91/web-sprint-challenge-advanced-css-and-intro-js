@@ -252,6 +252,12 @@ function get20s(array){
   // artists.split( artists[5], [17] ); {
   //   return(artists.name)
   // }
+  // artists.split([5],[17]);
+  // return array.name
+artists.split([5].name);
+artists.split([17].name);
+
+return array.name
 
 
 }
@@ -313,8 +319,8 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(array) {
 for(let i = 0; i < array.length; i++){
-  if(array.paintings >= 100);
-} //split method again?
+  if(array.number >= 120);
+}
 return array.name
 }
 console.log('task 7', lotsOfArt(artists));
